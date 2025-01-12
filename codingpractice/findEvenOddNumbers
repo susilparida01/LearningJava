@@ -1,4 +1,7 @@
 
+/*
+To define a number, find both even and odd numbers within a specified range, and output them in separate ArrayLists, you can use the following Java code:
+*/
 import java.util.ArrayList;
 
 public class EvenOddNumberFinder {
@@ -25,3 +28,13 @@ public class EvenOddNumberFinder {
         System.out.println("Odd numbers in the range from " + start + " to " + end + ": " + oddNumbers);
     }
 }
+
+/*
+Explanation:
+1. Range Definition: The start (start = 1) and end (end = 20) of the range are defined.
+2. ArrayLists: Two ArrayList<Integer> objects are created: one to store even numbers (evenNumbers) and one to store odd numbers (oddNumbers).
+3. Loop: The loop runs through the range, and each number is checked:
+4. If the number is divisible by 2 (i % 2 == 0), it is added to the evenNumbers list.
+5. If the number is not divisible by 2 (i % 2 != 0), it is added to the oddNumbers list.
+6. Output: The even and odd numbers are printed separately.
+*/
