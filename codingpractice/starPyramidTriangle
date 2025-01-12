@@ -1,0 +1,36 @@
+/*
+To print a regular pyramid triangle pattern in Java, you can use a similar approach but with different logic for printing spaces and stars. 
+The idea is to print spaces on the left side of each row to align the stars in a pyramid shape.
+*/
+
+public class PyramidTriangle {
+    public static void main(String[] args) {
+        // Define the number of rows for the pyramid
+        int rows = 5;
+
+        // Outer loop to print each row
+        for (int i = 1; i <= rows; i++) {
+            // Inner loop for spaces (decreases with each row)
+            for (int j = 0; j < rows - i; j++) {
+                System.out.print(" "); // Print spaces before stars
+            }
+
+            // Inner loop for stars (increases with each row)
+            for (int j = 0; j < (2 * i - 1); j++) {
+                System.out.print("*"); // Print stars
+            }
+
+            // Move to the next line after each row
+            System.out.println();
+        }
+    }
+}
+
+/*
+Explanation:
+1. rows = 5: You can change this value to adjust the height of the pyramid.
+2. Outer loop: The outer loop runs from i = 1 to i = rows, controlling the number of rows in the pyramid.
+3. Inner loop for spaces: The number of spaces before the stars decreases as the rows increase. For row i, the number of spaces is rows - i.
+4. Inner loop for stars: The number of stars increases as the rows increase. For row i, the number of stars is (2 * i - 1).
+5. System.out.println(): This prints a new line after each row.
+*/
