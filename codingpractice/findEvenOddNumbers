@@ -1,0 +1,27 @@
+
+import java.util.ArrayList;
+
+public class EvenOddNumberFinder {
+    public static void main(String[] args) {
+        // Define the range
+        int start = 1;  // Starting number in the range
+        int end = 20;   // Ending number in the range
+
+        // Create ArrayLists to store the even and odd numbers
+        ArrayList<Integer> evenNumbers = new ArrayList<>();
+        ArrayList<Integer> oddNumbers = new ArrayList<>();
+
+        // Iterate through the range and find even and odd numbers
+        for (int i = start; i <= end; i++) {
+            if (i % 2 == 0) {
+                evenNumbers.add(i);  // Add even number to the evenNumbers list
+            } else {
+                oddNumbers.add(i);   // Add odd number to the oddNumbers list
+            }
+        }
+
+        // Output the ArrayLists of even and odd numbers
+        System.out.println("Even numbers in the range from " + start + " to " + end + ": " + evenNumbers);
+        System.out.println("Odd numbers in the range from " + start + " to " + end + ": " + oddNumbers);
+    }
+}
