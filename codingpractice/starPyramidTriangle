@@ -1,3 +1,5 @@
+package com.greatlearning.codingpractice;
+
 /*
 To print a regular pyramid triangle pattern in Java, you can use a similar approach but with different logic for printing spaces and stars. 
 The idea is to print spaces on the left side of each row to align the stars in a pyramid shape.
