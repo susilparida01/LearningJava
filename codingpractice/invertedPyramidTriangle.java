@@ -1,4 +1,8 @@
 package com.greatlearning.codingpractice;
+/*
+To print an inverted pyramid triangle pattern in Java, you can use nested loops. 
+The outer loop will handle the rows, and the inner loop will print the spaces and stars for each row
+*/
 
 public class InvertedPyramidTriangle {
     public static void main(String[] args) {
@@ -22,3 +26,12 @@ public class InvertedPyramidTriangle {
         }
     }
 }
+
+/*
+Explanation:
+1. rows = 5: You can modify this value to change the number of rows in the pyramid.
+2. Outer loop: This loop runs from i = rows to i = 1, printing each row of the pyramid.
+3. Inner loop for spaces: The number of spaces decreases as the number of stars increases. For row i, the number of spaces is rows - i.
+4. Inner loop for stars: The number of stars printed for each row is (2 * i - 1).
+5. System.out.println(): This moves the output to the next line after each row is printed.
+*/
