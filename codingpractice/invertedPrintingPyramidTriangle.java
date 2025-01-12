@@ -1,21 +1,24 @@
 package com.greatlearning.codingpractice;
 
-public class invertedPrintingPyramidTriangle {
+public class InvertedPyramidTriangle {
+    public static void main(String[] args) {
+        // Define the number of rows for the inverted pyramid
+        int rows = 5;
 
-    public static void main(String[] args){
-        int k=1;
-        for(int i=1;i<5;i++)
-        {
-            for(int j=1;j<=i;j++)
-            {
-                System.out.print(k);
-                //System.out.print(j);
-                System.out.print("\t");
-                k++;
+        // Outer loop to print rows
+        for (int i = rows; i >= 1; i--) {
+            // Inner loop for spaces
+            for (int j = 0; j < rows - i; j++) {
+                System.out.print(" "); // Print spaces before stars
             }
-            System.out.println("");
 
+            // Inner loop for stars
+            for (int j = 0; j < (2 * i - 1); j++) {
+                System.out.print("*"); // Print stars
+            }
+
+            // Move to the next line after each row
+            System.out.println();
         }
     }
-
 }
