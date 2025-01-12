@@ -1,5 +1,9 @@
 package com.greatlearning.codingpractice;
 
+/*
+*WAP: to check a number os odd or even
+*/
+
 public class codingChallengeTwo {
 
     public static void main(String[] args) {
